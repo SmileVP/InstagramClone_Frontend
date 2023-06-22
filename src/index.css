@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.login-page {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  width: 20em;
+  height: 20em;
+}
+
+.create-post {
+  max-width: 30em;
+  height: 35em;
+  border: 3px solid lightgray;
+  border-radius: 1em;
+  margin-top:6em;
+}
+
+.home-page{
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.post-header {
+  height: 4em;
+  border-bottom: 3px solid lightgray;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card-details {
+  border-top: 3px solid lightgray;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.card-home {
+  max-width: 40em;
+  height: max-content;
+  margin: 25px;
+  border: 3px solid lightgray;
+  border-radius: 0.5em;
+  background-color: whitesmoke;
+}
+
+.card-header-home {
+  border-bottom: 3px solid lightgray;
+  gap: 4px;
+}
+
+.card-image img{
+  width:100%;
+}
+
+.card-content{
+  text-align: left;
+  line-height:10px;
+  padding:3px 10px;
+  border-bottom:3px solid lightgray;
+}
+
+.add-comment{
+  display: flex;
+  align-items: center;
+  padding:5px;
+}
+
+.add-comment input{
+  width:35em;
+  border: none;
+  padding:1em;
+  outline: none;
+}
+
+.comment{
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #49a9e9;;
+}
+
+
+/* profile css */
+.profile{
+  max-width:40em;
+  margin:2em;
+  margin-top:5em;
+}
+
+.profile-frame{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile-pic{
+  height: fit-content;
+}
+
+.profile-pic>img{
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 100px;
+}
+
+.profile-info {
+  gap:0.6em;
+}
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery img{
+  width:30%;
+  margin:0.5em;
+}
+
+/* like and unlike button */
+.material-symbols-outlined-red{
+  color: red;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-outlined{
+  cursor: pointer;
+}
+
+/* show comment css */
+.showComment{
+  width: 100%;
+  min-height:100vh;
+  position:fixed;
+  top:0;
+  left: 0;
+  background-color: rgba(16, 13, 13, 0.4);
+}
+
+.comment-container{
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 65%;
+  height:31em;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left:15%;
+}
+
+.post-pic{
+  width:20em;
+  height: 20em;
+}
+.add-comment-show input{
+  width:80%;
+  border: none;
+  outline: none;
+}
+
+.comment-content-bottom{
+  height: 18em;
+  display: flex;
+  align-items: last baseline;
+}
+
+.comment-read{
+  text-align: left;
+  margin-left: 10px;
+  height:5em;
+}
+
+.close-comment{
+  position: fixed;
+  top: 15%;
+  right: 20%;
+  border: none;
+  cursor: pointer;
+}
+
+/* delete post css */
+.delete-post{
+  position: absolute;
+  top:10px;
+  right: 10px;
+}
+
+.followBtn{
+  height:2em;
+  width:8em;
+  background-color:rgb(233, 89, 89);
+  border:none;
+  border-radius:1em;
+  transition: all 0.25s ease;
+}
+
+.followBtn:hover{
+  height:2.5em;
+  width:8.5em;
+  box-shadow: 0 10px 20px -10px rgba(219, 24, 44, 0.6);
+}
+
+/* PROFILE PIC CSS */
+.darkBg{
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.centered{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.changePic{
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.changePic div{
+  padding: 15px 80px;
+}
+
+.upload-btn{
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: bolder;
+  font-size:1em;
+}
+
+.forgot-password{
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.forgot-form{
+  width: 20em;
+}
