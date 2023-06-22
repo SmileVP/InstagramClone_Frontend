@@ -92,7 +92,7 @@ function PostDetails(props) {
                   <p>{props.item.likes.length} likes</p>
                   <p>{props.item.text}</p>
                 </div>
-                {/* add comment
+                {/* add comment */}
                 <div className="add-comment-show">
                   <span className="material-symbols-outlined">mood</span>
                   <input
@@ -110,7 +110,7 @@ function PostDetails(props) {
                   >
                     post
                   </button>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
